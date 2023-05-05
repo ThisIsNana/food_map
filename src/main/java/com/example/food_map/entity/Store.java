@@ -17,7 +17,24 @@ public class Store {
 	private String city;
 
 	@Column(name = "rating")
-	private int rating;
+	private double rating;
+
+	public Store() {
+		super();
+	}
+
+	public Store(String name, String city) {
+		super();
+		this.name = name;
+		this.city = city;
+	}
+
+	public Store(String name, String city, double rating) {
+		super();
+		this.name = name;
+		this.city = city;
+		this.rating = rating;
+	}
 
 	public String getName() {
 		return name;
@@ -35,11 +52,11 @@ public class Store {
 		this.city = city;
 	}
 
-	public int getRating() {
+	public double getRating() {
 		return rating;
 	}
 
-	public void setRating(int rating) {
+	public void setRating(double rating) {
 		this.rating = rating;
 	}
 

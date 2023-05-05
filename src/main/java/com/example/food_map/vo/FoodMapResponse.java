@@ -7,6 +7,15 @@ public class FoodMapResponse {
 	
 	private String message;
 
+	public FoodMapResponse() {
+		super();
+	}
+
+	public FoodMapResponse(String message) {
+		super();
+		this.message = message;
+	}
+
 	public String getMessage() {
 		return message;
 	}

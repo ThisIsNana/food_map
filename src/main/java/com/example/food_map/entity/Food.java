@@ -23,7 +23,19 @@ public class Food {
 	private int price;
 
 	@Column(name = "rating")
-	private String rating;
+	private double rating;
+
+	public Food() {
+		super();
+	}
+
+	public Food(String storeName, String foodName, int price, double rating) {
+		super();
+		this.storeName = storeName;
+		this.foodName = foodName;
+		this.price = price;
+		this.rating = rating;
+	}
 
 	public String getStoreName() {
 		return storeName;
@@ -49,11 +61,11 @@ public class Food {
 		this.price = price;
 	}
 
-	public String getRating() {
+	public double getRating() {
 		return rating;
 	}
 
-	public void setRating(String rating) {
+	public void setRating(double rating) {
 		this.rating = rating;
 	}
 }
