@@ -16,6 +16,6 @@ public interface FoodMapService {
 	//add food and store
 	public FoodMapResponse addStore(Store store);
 	public FoodMapResponse addFood(List<Food> foodList);
-	public FoodMapResponse addStoreAndFood(Store store, List<Food> foodList);
-
+//	public FoodMapResponse addStoreAndFood(Store store, List<Food> foodList);
+	public FoodMapResponse addStoreAndFood(String storeName, String city, String foodName, int price, double rating);
 }

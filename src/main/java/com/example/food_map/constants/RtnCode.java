@@ -5,6 +5,7 @@ public enum RtnCode {
 	CANNOT_EMTPY("400", "欄位不可空白"), // 前面名字可自己定義
 	DATA_ERROR("400", "輸入格式有誤"), 
 	INT_ERROR("400", "輸入數字或數量有誤!"), 
+	CANNOT_UPDATE("400", "超過數量，無法新增!"), 
 	NOT_FOUND("404", "查無店家資料"), 
 	ALREADY_PRESENT("409", "重複新增"),
 	NO_CHANGE("409", "資料未修改");
